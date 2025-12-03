@@ -5,8 +5,5 @@ function setup() {
 	horde = new Horde();
 	horde.addZombies(7);
 
-    function mousePressed() {
-    horde.checkClicks(mouseX, mouseY);
-    }
 
 }
