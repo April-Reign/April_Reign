@@ -1,25 +1,77 @@
-/*Counter program continued*/
-#countLabel{
-    display: block;
-    text-align: center;
-    font-size: 7em;
-    font-family: Arial, Helvetica, sans-serif;
-    color: aquamarine;
+html, body {
+  margin: 0px;
+  height: 100%;
 }
-#btnContainer{
-    text-align: center;
+
+#sidebar {
+	grid-area: sidebar;
+	overflow-y: scroll;
 }
-.buttons{
-    padding: 10px 20px;
-    font-size: 1.5em;
-    color: black;
-    background-color: aquamarine;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.25s;
+
+#content {
+	grid-area: content;
 }
-.buttons:hover{
-    background-color: blueviolet;
+
+.header {
+	grid-area: header;
+	font-family: Helvetica, sans-serif
 }
-/*Continued at Websiteindex.js*/
-/*End of counter program*/
+
+.footer{
+  grid-area: footer;
+}
+
+.sideBarItem{
+	max-height: 50px;
+	max-width: 50px;
+	padding:5px;
+}
+
+.sideBarItem img{
+	max-height: 50px;
+	max-Width:50px;
+}
+
+.colourPalette{
+	grid-area: colourP;
+	display:flex;
+	flex-direction:grid;
+	flex-flow: wrap;
+}
+
+.options{
+	grid-area: options;
+	padding: 15px;
+}
+
+.colourSwatches{
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	max-height: 40px;
+	max-width: 40px;
+	margin: 5px;
+}
+
+
+	.wrapper {
+		display: grid;
+		height: 100%;
+		grid-template-columns: 70px 230px  minmax(500px, 1fr);
+		grid-template-rows: 35px minmax(500px, 1fr) 160px;
+		grid-template-areas:
+               "header header header"
+				"sidebar content content"
+                "colourP colourP options";
+		background-color: #fff;
+		color: #444;
+	}
+.box {
+  background-color: #444;
+  color: #fff;
+  font-size: 150%;
+}
+
+.header {
+  background-color: #999;
+}
