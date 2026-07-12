@@ -2,147 +2,435 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>April Harrison</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of April Harrison, a data science student with experience in physics, mathematics, computer science, and programming."
+    >
+
+    <title>April Harrison | Data Science Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: black; color: white;">
-      <header style="background-color: rgb(170, 167, 169); text-align: center; padding: 20px; border: 3px rgb(76, 78, 78) solid;">
-    <h1 style="font-size: 3rem; margin: 0; font-family: Arial, sans-serif; text-shadow: 3px 3px 3px black;">April Harrison</h1>
+
+<body>
+    <!-- Allows keyboard and screen-reader users to bypass navigation -->
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="site-name" href="#home">April Harrison</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <br><br>
+    <main id="main-content">
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Data Science Student</p>
 
-    <div style="text-align: center;">
+                    <h1>April Harrison</h1>
 
-    <img src="Prof_Pic.jpg" alt="Profile Pic" height="500" style="box-shadow: 5px 5px 5px rgb(164, 168, 168);">
-    
-    </div>
-    
-    <br>
-     <hr>
-     <br>
+                    <p class="hero-introduction">
+                        Building skills in data analysis, statistics,
+                        programming, and problem-solving.
+                    </p>
 
-    <p>
-        I am a Data Science student with a background in physics, mathematics, and computer science, along with experience in undergraduate physics research and professional brand ambassador work. My academic and research experience has strengthened my skills in data collection, analysis, and problem-solving, and I enjoy working with structured data to find meaningful insights.
+                    <div class="hero-buttons">
+                        <a class="button primary-button" href="#projects">
+                            View My Projects
+                        </a>
 
-I am currently focused on developing practical skills in data analysis, statistics, and programming, with the goal of pursuing a career as a data analyst and eventually a data scientist. I am seeking internship opportunities where I can apply my skills in a real-world environment, gain hands-on experience, and continue growing in the field of data science.
-        
-    </p>
+                        <a
+                            class="button secondary-button"
+                            href="April_Harrison's_Resume.pdf"
+                            download
+                        >
+                            Download My Résumé
+                        </a>
+                    </div>
+                </div>
 
-    <br><br>
+                <img
+                    class="profile-image"
+                    src="Prof_Pic.jpg"
+                    alt="April Harrison, a data science student"
+                >
+            </div>
+        </section>
 
-    <h2 style="background-color: rgb(170, 167, 169); display: inline-block; padding: 5px;  border: 3px rgb(76, 78, 78) solid;">
-    <a href="">
-                Macro Calculator
-    </a>
-    </h2>
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="section-content narrow-content">
+                <p class="section-label">About Me</p>
 
-    <p>
-    First, click on the link below and Calculate your TDEE, for activity just put Sedentary (office job)
-    </p>
-    <p>Then scroll down and find your maintenance calories</p>
+                <h2>My Background and Career Goals</h2>
 
-    <a href="https://tdeecalculator.net/"
-target="_blank"
-title="Goes to calorie calc" >
-   To Calculate your maintenance calories
-    </a>
-  <br>
+                <p>
+                    I am a data science student with a background in
+                    physics, mathematics, and computer science. I also
+                    have experience in undergraduate physics research
+                    and professional brand ambassador work.
+                </p>
 
+                <p>
+                    My academic and research experience has strengthened
+                    my skills in data collection, analysis, and
+                    problem-solving. I enjoy working with structured data
+                    to identify patterns and produce meaningful insights.
+                </p>
 
-    <br>
-    <h4>Enter your maintenance calories per day below</h4>
-    <label>Maintenance Calories:</label>
-    <input id="myText">
-    <button id="mySubmit">Submit</button>
-    <br><br><br>
+                <p>
+                    I am currently developing practical skills in data
+                    analysis, statistics, and programming. My goal is to
+                    pursue a career as a data analyst and eventually as a
+                    data scientist. I am seeking internship opportunities
+                    where I can apply my skills in a real-world environment.
+                </p>
+            </div>
+        </section>
 
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="section alternate-section">
+            <div class="section-content">
+                <p class="section-label">My Work</p>
+                <h2>Programming Projects</h2>
 
-     <br>
-    <h4>Enter your weight in lbs below</h4>
-    <label>Weight:</label>
-    <input id="myWeight">
-    <button id="myWeightSubmit">Submit</button>
-    <br><br><br>
+                <p class="section-introduction">
+                    These projects demonstrate my developing skills in
+                    JavaScript, user interaction, calculations, and
+                    graphical programming.
+                </p>
 
-    <h4>Then average the # of steps you walk a day over the last few months using your step tracker</h4>
-    <h4>Enter the average number of steps a day below</h4>
-    <label>Steps you walk a day:</label>
-    <input id="myStepsInput">
-    <button id="myStepsSubmit">Submit</button>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-number" aria-hidden="true">01</div>
 
-    <p id="result"></p>
+                        <h3>Maintenance-Calorie Calculator</h3>
 
-    <br>
-    <h2>Your daily maintenance calories are:</h2> <br>
-    
+                        <p>
+                            A JavaScript calculator that combines a user's
+                            estimated maintenance calories with calories
+                            burned through daily steps.
+                        </p>
 
+                        <a class="text-link" href="#calculator">
+                            Try the calculator
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
 
-    <p id="maintenanceResult"></p>
+                    <article class="project-card">
+                        <div class="project-number" aria-hidden="true">02</div>
 
-    <br><br><br>
-   <p>
-    Then, use the calculator below to calculate your macros.
-   </p>
-    <br>
-   <p>
-       Macro calculator coming soon!
-   </p>
+                        <h3>Zombie Game</h3>
 
-   <br><br>
-    
+                        <p>
+                            An interactive graphical programming project
+                            created with JavaScript and p5.js.
+                        </p>
 
-  <button onclick="window.open('zombieGameIndex.html', '_blank')">
-    Zombie Game!
-  </button>
+                        <a
+                            class="text-link"
+                            href="zombieGameIndex.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open the Zombie Game
+                            <span class="visually-hidden">
+                                in a new tab
+                            </span>
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
 
-     <br><br><br><br>
+                    <article class="project-card">
+                        <div class="project-number" aria-hidden="true">03</div>
 
-      <!--counter program-->
-   <h2 style="text-align: center; color: aquamarine;">Counter Program</h2>
-   <label id="countLabel">0</label><br>
-   <div id="btnContainer">
-    <button id="decreaseBtn" class="buttons">decrease</button>
-    <button id="resetBtn" class="buttons">reset</button>
-    <button id="increaseBtn" class="buttons">increase</button>
-   </div>
-   <!--Continued at style.css-->
-   <!--End of counter program-->
+                        <h3>Counter Program</h3>
 
+                        <p>
+                            A simple JavaScript interface that allows users
+                            to increase, decrease, or reset a numerical value.
+                        </p>
 
+                        <a class="text-link" href="#counter">
+                            Try the counter
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <br><br><br><br>
+        <!-- CALCULATOR SECTION -->
+        <section id="calculator" class="section">
+            <div class="section-content">
+                <p class="section-label">Interactive Project</p>
+                <h2>Daily Maintenance-Calorie Calculator</h2>
 
-    <p>Use the email link below, not the one on my resume</p>
+                <p class="section-introduction">
+                    Enter all three values and select “Calculate” to estimate
+                    the calories burned from steps and your adjusted daily
+                    maintenance calories.
+                </p>
 
-   <a href="April_Harrison_Resume.doc" download>Download My Resume</a>
+                <div class="calculator-layout">
+                    <div class="instructions-panel">
+                        <h3>How to use the calculator</h3>
 
+                        <ol class="instructions-list">
+                            <li>
+                                Estimate your baseline maintenance calories
+                                using the external TDEE calculator.
+                            </li>
 
+                            <li>
+                                Enter your maintenance calories and current
+                                weight.
+                            </li>
 
-    <footer style="background-color: rgb(170, 167, 169);">
-            <hr>
-            Author: April Harrison
-            <br>
-            &copy; Copyright Reserved
-            <br>
-            <small><a href="mailto:harrison.april@ymail.com">
-                harrison.april@ymail.com
-            </a>
-            </small>
-        </footer>
+                            <li>
+                                Enter your average number of daily steps.
+                            </li>
 
+                            <li>
+                                Select the Calculate button to view the results.
+                            </li>
+                        </ol>
 
+                        <a
+                            class="button secondary-button"
+                            href="https://tdeecalculator.net/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open TDEE Calculator
+                            <span class="visually-hidden">in a new tab</span>
+                        </a>
+                    </div>
 
-        <script src="index.js"></script>
+                    <form id="calorieForm" class="calculator-form">
+                        <div class="form-group">
+                            <label for="myText">
+                                Baseline maintenance calories
+                            </label>
+
+                            <span id="calorieHelp" class="help-text">
+                                Enter a value such as 1800.
+                            </span>
+
+                            <input
+                                id="myText"
+                                name="maintenanceCalories"
+                                type="number"
+                                min="1"
+                                step="1"
+                                inputmode="numeric"
+                                aria-describedby="calorieHelp"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="myWeight">
+                                Weight in pounds
+                            </label>
+
+                            <span id="weightHelp" class="help-text">
+                                Enter a value such as 150.
+                            </span>
+
+                            <input
+                                id="myWeight"
+                                name="weight"
+                                type="number"
+                                min="1"
+                                step="0.1"
+                                inputmode="decimal"
+                                aria-describedby="weightHelp"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="myStepsInput">
+                                Average daily steps
+                            </label>
+
+                            <span id="stepsHelp" class="help-text">
+                                Enter a value such as 8000.
+                            </span>
+
+                            <input
+                                id="myStepsInput"
+                                name="steps"
+                                type="number"
+                                min="0"
+                                step="1"
+                                inputmode="numeric"
+                                aria-describedby="stepsHelp"
+                                required
+                            >
+                        </div>
+
+                        <button class="button primary-button" type="submit">
+                            Calculate Results
+                        </button>
+
+                        <button
+                            class="button reset-button"
+                            id="clearCalculator"
+                            type="reset"
+                        >
+                            Clear Form
+                        </button>
+
+                        <p
+                            id="formMessage"
+                            class="form-message"
+                            role="alert"
+                        ></p>
+                    </form>
+                </div>
+
+                <div
+                    id="calculatorResults"
+                    class="results-panel"
+                    aria-live="polite"
+                    hidden
+                >
+                    <h3>Your Results</h3>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-label">
+                                Calories burned from steps
+                            </span>
+
+                            <strong id="result">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Adjusted maintenance calories
+                            </span>
+
+                            <strong id="maintenanceResult">0</strong>
+                        </div>
+                    </div>
+
+                    <p class="results-disclaimer">
+                        This calculator provides an estimate for educational
+                        purposes and is not medical advice.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- COUNTER SECTION -->
+        <section id="counter" class="section alternate-section">
+            <div class="section-content narrow-content">
+                <p class="section-label">JavaScript Demonstration</p>
+                <h2>Counter Program</h2>
+
+                <p class="section-introduction">
+                    Use the buttons to change the displayed number.
+                </p>
+
+                <div class="counter-card">
+                    <output
+                        id="countLabel"
+                        aria-live="polite"
+                        aria-label="Current counter value"
+                    >
+                        0
+                    </output>
+
+                    <div id="btnContainer" class="counter-buttons">
+                        <button
+                            id="decreaseBtn"
+                            class="button counter-button"
+                            type="button"
+                        >
+                            Decrease
+                        </button>
+
+                        <button
+                            id="resetBtn"
+                            class="button reset-button"
+                            type="button"
+                        >
+                            Reset
+                        </button>
+
+                        <button
+                            id="increaseBtn"
+                            class="button counter-button"
+                            type="button"
+                        >
+                            Increase
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="section-content narrow-content contact-section">
+                <p class="section-label">Contact</p>
+                <h2>Let’s Connect</h2>
+
+                <p>
+                    I am interested in data-analysis internships,
+                    collaborative projects, and opportunities to continue
+                    developing my technical skills.
+                </p>
+
+                <div class="contact-links">
+                    <a
+                        class="button primary-button"
+                        href="mailto:harrison.april@ymail.com"
+                    >
+                        Email April
+                    </a>
+
+                    <a
+                        class="button secondary-button"
+                        href="April_Harrison's_Resume.pdf"
+                        download
+                    >
+                        Download My Résumé
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="currentYear"></span> April Harrison</p>
+
+        <a href="mailto:harrison.april@ymail.com">
+            harrison.april@ymail.com
+        </a>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
