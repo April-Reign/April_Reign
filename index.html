@@ -174,6 +174,35 @@
                             <span aria-hidden="true">→</span>
                         </a>
                     </article>
+
+                      <article class="project-card">
+                        <div class="project-number" aria-hidden="true">04</div>
+                        
+                        <h3 style="color: yellowgreen;">Coming Soon!</h3>
+                        <h4 style="color: yellowgreen;">(I have to wait until it's
+                        been graded, or the AI might flag it as plagiarized since this is public.)</h4>
+                        <h3>Mario Bumper Cars Game</h3>
+
+                        <p>
+                            A browser based Mario themed bumper car game built 
+                            with JavaScript, p5.js, HTML, CSS, and Matter.js. Players compete 
+                            against AI controlled drivers, collect powerup stars, 
+                            and avoid obstacles in a physics based arena.
+                        </p>
+                        
+                        <!--<a
+                            class="text-link"
+                            href="zombieGameIndex.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Open the Mario Bumper Cars Game
+                            <span class="visually-hidden">
+                                in a new tab
+                            </span>
+                            <span aria-hidden="true">→</span>
+                        </a>-->
+                    </article>
                 </div>
             </div>
         </section>
@@ -196,13 +225,14 @@
 
                         <ol class="instructions-list">
                             <li>
-                                Estimate your baseline maintenance calories
-                                using the external TDEE calculator.
+                                Estimate your maintenance calories using the external
+                                TDEE calculator below. Select “Sedentary” because this
+                                calculator will add your daily steps separately. Then
+                                return here and enter the result in the first field.
                             </li>
 
                             <li>
-                                Enter your maintenance calories and current
-                                weight.
+                                Enter your current weight.
                             </li>
 
                             <li>
@@ -315,7 +345,10 @@
                     aria-live="polite"
                     hidden
                 >
-                    <h3>Your Results</h3>
+                    <div class="results-header">
+                        <h3>Your Results</h3>
+                        <h2>To Maintain Your Current Weight</h2>
+                    </div>
 
                     <div class="result-grid">
                         <div class="result-item">
@@ -332,6 +365,239 @@
                             </span>
 
                             <strong id="maintenanceResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Protein Goal:
+                            </span>
+
+                            <strong id="proteinGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fat Goal:
+                            </span>
+
+                            <strong id="fatGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Total Carbohydrate Goal:
+                            </span>
+
+                            <strong id="carbGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fiber Goal:
+                            </span>
+
+                            <strong id="fiberGoal">0</strong>
+                        </div>
+                    </div>
+
+                    <p class="results-disclaimer">
+                        This calculator provides an estimate for educational
+                        purposes and is not medical advice.
+                    </p>
+                </div>
+
+            <div
+                    id="weightLossResults"
+                    class="results-panel"
+                    aria-live="polite"
+                    hidden
+                >
+                    <div class="results-header">
+                        <h3>Your Results</h3>
+                        <h2>To Lose 1 Pound Per Week</h2>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-label">
+                                Calories burned from steps
+                            </span>
+
+                            <strong id="lossResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Daily calorie target
+                            </span>
+
+                            <strong id="lossMaintenanceResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Protein Goal:
+                            </span>
+
+                            <strong id="lossProteinGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fat Goal:
+                            </span>
+
+                            <strong id="lossFatGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Total Carbohydrate Goal:
+                            </span>
+
+                            <strong id="lossCarbGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fiber Goal:
+                            </span>
+
+                            <strong id="lossFiberGoal">0</strong>
+                        </div>
+                    </div>
+
+                    <p class="results-disclaimer">
+                        This calculator provides an estimate for educational
+                        purposes and is not medical advice.
+                    </p>
+                </div>
+
+                    
+               <div
+                    id="weightLossOneHalfResults"
+                    class="results-panel"
+                    aria-live="polite"
+                    hidden
+                >
+                    <div class="results-header">
+                        <h3>Your Results</h3>
+                        <h2>To Lose 1.5 Pounds Per Week</h2>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-label">
+                                Calories burned from steps
+                            </span>
+
+                            <strong id="lossOneHalfResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Daily calorie target
+                            </span>
+
+                            <strong id="lossOneHalfMaintenanceResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Protein Goal:
+                            </span>
+
+                            <strong id="lossOneHalfProteinGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fat Goal:
+                            </span>
+
+                            <strong id="lossOneHalfFatGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Total Carbohydrate Goal:
+                            </span>
+
+                            <strong id="lossOneHalfCarbGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fiber Goal:
+                            </span>
+
+                            <strong id="lossOneHalfFiberGoal">0</strong>
+                        </div>
+                    </div>
+
+                    <p class="results-disclaimer">
+                        This calculator provides an estimate for educational
+                        purposes and is not medical advice.
+                    </p>
+                </div>
+                <div
+                    id="weightGainResults"
+                    class="results-panel"
+                    aria-live="polite"
+                    hidden
+                >
+                    <div class="results-header">
+                        <h3>Your Results</h3>
+                        <h2>To Gain 1 Pound Per Week</h2>
+                    </div>
+
+                    <div class="result-grid">
+                        <div class="result-item">
+                            <span class="result-label">
+                                Calories burned from steps
+                            </span>
+
+                            <strong id="gainResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Daily calorie target
+                            </span>
+
+                            <strong id="gainMaintenanceResult">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Protein Goal:
+                            </span>
+
+                            <strong id="gainProteinGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fat Goal:
+                            </span>
+
+                            <strong id="gainFatGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Total Carbohydrate Goal:
+                            </span>
+
+                            <strong id="gainCarbGoal">0</strong>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-label">
+                                Fiber Goal:
+                            </span>
+
+                            <strong id="gainFiberGoal">0</strong>
                         </div>
                     </div>
 
