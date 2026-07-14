@@ -54,7 +54,8 @@ a:hover {
 }
 
 button,
-input {
+input,
+select {
     font: inherit;
 }
 
@@ -87,6 +88,14 @@ a {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
+    outline: 4px solid white;
+    outline-offset: 4px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
     outline: 4px solid white;
     outline-offset: 4px;
 }
@@ -502,6 +511,81 @@ input:focus-visible {
     font-size: 0.9rem;
 }
 
+.exercise-section {
+    margin-top: 2rem;
+    padding: clamp(1.5rem, 4vw, 2rem);
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+.exercise-section legend {
+    padding: 0 0.5rem;
+    color: var(--accent);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.exercise-entry {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+
+    margin-top: 1rem;
+    padding: 1rem;
+
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.exercise-input-group label {
+    display: block;
+    margin-bottom: 0.3rem;
+
+    color: var(--text);
+    font-weight: bold;
+}
+
+.exercise-entry select,
+.exercise-entry input {
+    width: 100%;
+    min-height: 48px;
+
+    padding: 0.7rem 0.8rem;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    border: 2px solid var(--border);
+    border-radius: 7px;
+}
+
+.exercise-entry select:hover,
+.exercise-entry input:hover {
+    border-color: var(--accent);
+}
+
+.remove-exercise {
+    min-height: 48px;
+    padding: 0.7rem 1rem;
+
+    background-color: transparent;
+    color: var(--danger);
+
+    border: 2px solid var(--danger);
+    border-radius: 7px;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.remove-exercise:hover {
+    background-color: var(--danger);
+    color: white;
+}
+
 
 /* ========================================
    COUNTER
@@ -683,6 +767,14 @@ input:focus-visible {
     }
 
     .counter-buttons .button {
+        width: 100%;
+    }
+
+    .exercise-entry {
+        grid-template-columns: 1fr;
+    }
+
+    .remove-exercise {
         width: 100%;
     }
 }
