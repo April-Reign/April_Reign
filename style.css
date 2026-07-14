@@ -398,6 +398,24 @@ input:focus-visible {
     margin-top: 0;
 }
 
+.results-header {
+    display: flex;
+    align-items: center;
+}
+
+.results-header h3 {
+    margin: 0;
+}
+
+.results-header h2 {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    color: yellowgreen;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 .instructions-list {
     padding-left: 1.4rem;
 }
